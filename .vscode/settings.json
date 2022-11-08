@@ -1,0 +1,7 @@
+{
+    "python.testing.pytestArgs": [
+        "hypothesis_examples"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}
