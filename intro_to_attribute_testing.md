@@ -93,7 +93,7 @@ Can be found in `hypothesis-examples\hypothesis_examples\dataframes.py`
 
 * Pandas and numpy sometimes have their own return types which won’t match up. e.g. if you want to check the return type is timedelta, sometimes it might be pandas.Timedelta. In this case, I changed my test to look for pd.Timedelta instead. Similarly I found a case with a numpy `bool` return type being `numpy.bool_` which failed my `assert isinstance(var_name, bool)` assertion. In this bool case, I changed the underlying function by wrapping the output in `bool()` to force the type as I wanted it.
 
-* Tests that take too long can trigger unrelated error messages. For example, I kept getting a flaky test error (as seen here  ) when it was my test taking too long. To get around this for long-running functions/methods, you can do from hypothesis import settings and decorate your test function
+* Tests that take too long can trigger unrelated error messages. For example, I kept getting a flaky test error when it was my test taking too long. To get around this for long-running functions/methods, you can do from hypothesis import settings and decorate your test function
 
 ```python
 from hypothesis import given, settings
