@@ -1,6 +1,6 @@
 # hypothesis-examples
 
-Trying to use hypothesis to generate custom complex dataframes can be frustrating as the documentation is poor and is lacking examples. Many things I've done has been trial and error and figuring things out manually.
+Trying to use hypothesis to generate custom complex dataframes can be frustrating as the documentation is poor and is lacking examples. Many things I've done has been through trial and error and figuring things out manually.
 
 Here, I will try to maintain some examples of simple and complex dataframe generation which can be used as a reference in the future.
 
